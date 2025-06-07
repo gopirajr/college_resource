@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking Status</title>
+</head>
+<body>
+    <h2>All Bookings</h2>
+    <table border="1">
+        <tr>
+            <th>Student</th>
+            <th>Email</th>
+            <th>Resource</th>
+            <th>Date</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Reason</th>
+            <th>Status</th>
+        </tr>
+        {% for booking in bookings %}
+        <tr>
+            <td>{{ booking.student_name }}</td>
+            <td>{{ booking.email }}</td>
+            <td>{{ booking.resource_name }}</td>
+            <td>{{ booking.date }}</td>
+            <td>{{ booking.start_time }}</td>
+            <td>{{ booking.end_time }}</td>
+            <td>{{ booking.reason }}</td>
+            <td>{{ booking.status }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

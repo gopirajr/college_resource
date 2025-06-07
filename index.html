@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to College Resource Booking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-50 font-sans">
+    <header class=" bg-sky-900 text-white p-6">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-3xl font-bold">College Resource Booking System</h1>
+            <nav class="mt-4 md:mt-0">
+                <a href="templates/index.html" class="px-4 py-2 hover:bg-blue-800 rounded">Home</a>
+                <a href="/resource" class="px-4 py-2 hover:bg-blue-800 rounded">Resources</a>
+                <a href="/bookresources" class="px-4 py-2 hover:bg-blue-800 rounded">Book Now</a>
+                <a href="/booking_status" class="px-4 py-2 hover:bg-blue-800 rounded">My Bookings</a>
+                <a href="/admin" class="px-4 py-2 hover:bg-blue-800 rounded">Admin</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <!-- Hero Section -->
+        <section class="text-center py-12 bg-gradient-to-r from-blue-100 to-blue-200 rounded-lg">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Welcome to Resource Booking</h2>
+            <p class="text-lg text-gray-600 mb-6">Easily book seminar halls, computer labs, projectors, and more for your academic and club activities.</p>
+            <a href="/resource" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+                Explore Resources
+            </a>
+        </section>
+ 
+        <!-- Features Section -->
+        <section class="py-12">
+            <h3 class="text-2xl font-semibold text-center mb-8">Why Use Our System?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="https://wallpapercave.com/wp/wp9464100.jpg" height="400px" width="400px" alt="">
+                    <h4 class="text-xl font-bold mb-2">For Students</h4>
+                    <p class="text-gray-600">Book labs for practicals, project reviews, or study sessions.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="https://www.differencebetween.net/wp-content/uploads/2017/10/Difference-between-Company-and-Corporate-1-300x204.png" height="600px" width="600px" alt="">
+                  <h4 class="text-xl font-bold mb-2">For Faculty</h4>
+                    <p class="text-gray-600">Reserve seminar halls or equipment for lectures.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="https://th.bing.com/th/id/R.43096b80612768f1254bb5a2f67fbb29?rik=2U%2f%2bPgtKhIiihA&riu=http%3a%2f%2fthelcbridge.com%2fwp-content%2fuploads%2f2014%2f10%2fStudentClubsandOrgs.jpg&ehk=IFHa5ieE2yLUGeZSEHWOjeRSxS9OI1zVDhgtftfOwCA%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" height="800px" width="800px" alt="">
+                    <h4 class="text-xl font-bold mb-2">For Clubs</h4>
+                    <p class="text-gray-600">Schedule practice rooms, auditoriums, or resources for events.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <p>A College Resource Booking System is designed to manage and allocate shared facilities like classrooms, labs, seminar halls, sports grounds, and auditoriums in an efficient and organized manner. Its main use is to streamline the booking process, reduce scheduling conflicts, and ensure fair access to resources for students, faculty, and staff. Through the system, users can check availability, request bookings, and receive confirmations—all in real-time. The interaction is simple and user-friendly: a student or teacher logs into the system using their college ID, selects the required resource, picks a date and time, and submits a request. Administrators can then review, approve, or reject the request based on availability and rules. Users receive notifications about the status of their bookings and can also modify or cancel them if needed. This level of interaction not only saves time but also promotes transparency and accountability. By making the process digital, the system enhances coordination between departments, improves resource utilization, and helps in organizing academic and extracurricular events smoothly.
+
+</p>
+
+        <!-- Quick Links Section -->
+        <section class="py-12 text-center">
+            <h3 class="text-2xl font-semibold mb-8">Get Started</h3>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="/bookresources" class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700">
+                    Book a Resource
+                </a>
+                <a href="/booking_status" class="bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700">
+                    Check Booking Status
+                </a>
+                <a href="/admin" class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700">
+                    Admin Dashboard
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>© 2025 College Resource Booking System. All rights reserved.</p>
+        <center><p>ALAGAPPA UNIVERSITY</p></center>
+    </footer>
+</body>
+</html>

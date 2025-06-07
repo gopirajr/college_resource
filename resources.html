@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resources - College Resource Booking</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .resource-scroll {
+      max-height: 500px;
+      overflow-y: auto;
+      scrollbar-width: thin;
+    }
+    .resource-scroll::-webkit-scrollbar {
+      width: 8px;
+    }
+    .resource-scroll::-webkit-scrollbar-thumb {
+      background-color: rgba(100, 100, 255, 0.4);
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-blue-100 min-h-screen text-gray-800">
+  <header class="bg-sky-900  text-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+      <h1 class="text-3xl font-bold">College Resource Booking System</h1>
+      <nav class="mt-4 md:mt-0 space-x-4">
+        <a href="index.html" class="px-4 py-2 hover:bg-blue-800 transition">Home</a>
+        <a href="/resource" class="px-4 py-2 bg-blue-800 rounded shadow">Resources</a>
+        <a href="bookresources.html" class="px-4 py-2 hover:bg-blue-800 transition">Book Now</a>
+        <a href="booking_status.html" class="px-4 py-2 hover:bg-blue-800 transition">My Bookings</a>
+        <a href="administrator.html" class="px-4 py-2 hover:bg-blue-800 transition">Admin</a>
+      </nav>
+    </div>
+  </header>
+ 
+  <main class="max-w-7xl mx-auto px-4 py-10">
+    <h2 class="text-3xl font-semibold mb-6 text-center text-blue-800">Available Resources</h2>
+     
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 resource-scroll p-2 bg-white/60 rounded-xl shadow-inner">
+
+      <!-- Resource Cards -->
+      
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transition duration-300 transform hover:scale-105">
+        <h3 class="text-xl font-bold text-blue-700 mb-2">Football Ground</h3>
+        <p class="text-gray-600"><strong>Resource Id:</strong> 1</p>
+        <p class="text-gray-600"><strong>Type:</strong> Sports</p>
+        <p class="text-gray-600"><strong>Location:</strong> Sports Complex</p>
+        <p class="text-gray-600 mt-2">Full-sized grass field with goalposts and seating.</p>
+        <center><a href="/bookresources"><button class="text-blue-600 mt-3 underline">Click</button></a></center>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transition duration-300 transform hover:scale-105">
+        <h3 class="text-xl font-bold text-blue-700 mb-2">Cricket Ground</h3>
+        <p class="text-gray-600"><strong>Resource Id:</strong> 2</p>
+        <p class="text-gray-600"><strong>Type:</strong> Sports</p>
+        <p class="text-gray-600"><strong>Location:</strong> Near Hostel Block</p>
+        <p class="text-gray-600 mt-2">greenish pitch </p>
+        <center><a href="/bookresources"><button class="text-blue-600 mt-3 underline">Click</button></a></center>
+      </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transition duration-300 transform hover:scale-105">
+        <h3 class="text-xl font-bold text-blue-700 mb-2"> Volleyball ground</h3>
+        <p class="text-gray-600"><strong>Resource Id:</strong> 3</p>
+        <p class="text-gray-600"><strong>Type:</strong> Sports</p>
+        <p class="text-gray-600"><strong>Location:</strong> Near Hostel Block</p>
+        <p class="text-gray-600 mt-2">beach sand ground and red sand ground </p>
+        <center><a href="/bookresources"><button class="text-blue-600 mt-3 underline">Click</button></a></center>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transition duration-300 transform hover:scale-105">
+        <h3 class="text-xl font-bold text-blue-700 mb-2">Basketball Court</h3>
+        <p class="text-gray-600"><strong>Resource Id:</strong> 4</p>
+        <p class="text-gray-600"><strong>Type:</strong> Sports</p>
+        <p class="text-gray-600"><strong>Location:</strong> Near Hostel Block</p>
+        <p class="text-gray-600 mt-2">Outdoor court with synthetic flooring and lighting.</p>
+        <center><a href="/bookresources"><button class="text-blue-600 mt-3 underline">Click</button></a></center>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transition duration-300 transform hover:scale-105">
+        <h3 class="text-xl font-bold text-blue-700 mb-2">Computer Lab</h3>
+        <p class="text-gray-600"><strong>Resource Id:</strong> 5</p>
+        <p class="text-gray-600"><strong>Type:</strong> Lab</p>
+        <p class="text-gray-600"><strong>Location:</strong> Block C, Room 204</p>
+        <p class="text-gray-600 mt-2">Equipped with 70+ high-performance systems.</p>
+        <center><a href="/bookresources"><button class="text-blue-600 mt-3 underline">Click</button></a></center>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transition duration-300 transform hover:scale-105">
+        <h3 class="text-xl font-bold text-blue-700 mb-2">Physics Lab</h3>
+        <p class="text-gray-600"><strong>Resource Id:</strong> 6</p>
+        <p class="text-gray-600"><strong>Type:</strong> Science Lab</p>
+        <p class="text-gray-600"><strong>Location:</strong> Science Block - Room 101</p>
+        <p class="text-gray-600 mt-2">Fully equipped with optics, mechanics, and electronics kits.</p>
+        <center><a href="/bookresources"><button class="text-blue-600 mt-3 underline">Click</button></a></center>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transition duration-300 transform hover:scale-105">
+        <h3 class="text-xl font-bold text-blue-700 mb-2">Chemistry Lab</h3>
+        <p class="text-gray-600"><strong>Resource Id:</strong> 7</p>
+        <p class="text-gray-600"><strong>Type:</strong> Science Lab</p>
+        <p class="text-gray-600"><strong>Location:</strong> Science Block - Room 102</p>
+        <p class="text-gray-600 mt-2">Modern lab with all chemical apparatus and safety tools.</p>
+        <center><a href="/bookresources"><button class="text-blue-600 mt-3 underline">Click</button></a></center>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transition duration-300 transform hover:scale-105">
+        <h3 class="text-xl font-bold text-blue-700 mb-2">Auditorium</h3>
+        <p class="text-gray-600"><strong>Resource Id:</strong> 8</p>
+        <p class="text-gray-600"><strong>Type:</strong> Event Space</p>
+        <p class="text-gray-600"><strong>Location:</strong> Main Building - Ground Floor</p>
+        <p class="text-gray-600 mt-2">Seating for 500+ people, stage lighting and audio setup.</p>
+        <center><a href="/bookresources"><button class="text-blue-600 mt-3 underline">Click</button></a></center>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transition duration-300 transform hover:scale-105">
+        <h3 class="text-xl font-bold text-blue-700 mb-2">Seminar Hall</h3>
+        <p class="text-gray-600"><strong>Resource Id:</strong> 9</p>
+        <p class="text-gray-600"><strong>Type:</strong> Conference</p>
+        <p class="text-gray-600"><strong>Location:</strong> Block A - Floor 1</p>
+        <p class="text-gray-600 mt-2">Furnished with projector, audio system, and air conditioning.</p>
+        <center><a href="/bookresources"><button class="text-blue-600 mt-3 underline">Click</button></a></center>
+      </div>
+
+
+    </div>
+  </main>
+
+  <footer class="bg-gray-900 text-white py-4 text-center mt-10">
+    <p>© 2025 College Resource Booking System. All rights reserved.</p>
+    <p>ALAGAPPA UNIVERSITY</p>
+  </footer>
+</body>
+</html>
